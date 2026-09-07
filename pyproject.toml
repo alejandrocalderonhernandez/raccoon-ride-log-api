@@ -7,7 +7,27 @@ authors = [
     { name = "Rene Calderon" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "fastapi", # WEB
+    "uvicorn", # WEB Server
+    "pydantic", # Valid DTOs
+    "pydantic-settings", # Configuration based on .env
+    "sqlalchemy", # ORM
+    "asyncpg", # Postgres driver
+    "pyjwt", # JWT
+    "passlib[bcrypt]", # Hash and encoder
+    "bcrypt", # Algoritm to encode
+    "httpx", # HTTP Client
+    "apscheduler", # Cron 
+    "pandas", # Dataset
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "httpx",
+]
 
 [project.scripts]
 raccoon-ridelog = "raccoon_ridelog:main"
