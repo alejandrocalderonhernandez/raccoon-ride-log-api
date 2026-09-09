@@ -19,14 +19,7 @@ dependencies = [
     "bcrypt", # Algoritm to encode
     "httpx", # HTTP Client
     "apscheduler", # Cron 
-    "pandas", # Dataset
-]
-
-[dependency-groups]
-dev = [
-    "pytest",
-    "pytest-asyncio",
-    "httpx",
+    "pandas", # Data
 ]
 
 [project.scripts]
