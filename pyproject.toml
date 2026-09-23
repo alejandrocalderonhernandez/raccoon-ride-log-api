@@ -10,7 +10,7 @@ requires-python = ">=3.12"
 dependencies = [
     "fastapi", # WEB
     "uvicorn", # WEB Server
-    "pydantic", # Valid DTOs
+    "pydantic[email]", # Valid DTOs
     "pydantic-settings", # Configuration based on .env
     "sqlalchemy", # ORM
     "asyncpg", # Postgres driver
@@ -18,8 +18,9 @@ dependencies = [
     "passlib[bcrypt]", # Hash and encoder
     "bcrypt", # Algoritm to encode
     "httpx", # HTTP Client
-    "apscheduler", # Cron 
+    "apscheduler", # Cron
     "pandas", # Data
+    "greenlet>=3.5.5",
 ]
 
 [project.scripts]
